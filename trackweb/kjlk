@@ -1,0 +1,37 @@
+import React from "react";
+import Link from "next/link";
+import {HiArrowNarrowUp} from "react-icons/hi"
+import {HiOutlineArrowLeft} from "react-icons/hi"
+import Compass from "../../components/Compass";
+
+export default function CompassPage ()
+{
+    const bearing = 45;
+    const distance = 100;
+    return(
+        <main className="w-screen h-screen justify-center bg-gradient-to-b from-[#102b44] from-40% to-[#102b448f]">
+        <div className=" py-14 h-fit w-full flex justify-around space-x-20 bg-[#d9d9d91e] rounded-b-lg items-center shadow-md">
+            <Link href='/'>
+                <HiOutlineArrowLeft size={40} color="#D9D9D9" />
+            </Link>
+            <div className="text-[#ffffff] text-4xl text-center -my-10 pl-40 ">
+                FindMe
+            </div>
+            <div className="text-white text-2xl text-right px-14">
+                Samuel
+            </div>
+        </div>
+        <div className="text-center px-5 pt-10 text-white text-3xl">
+            User's Backpack
+        </div>
+        <div className="pt-40 flex items-center justify-center group transition-transform group-active:rotate-45">
+          <div className="w-96 h-96 flex items-center justify-center bg-gradient-to-b from-[#ffffff13] to-[#d9d9d904] to-30% rounded-full transition-transform group-active:rotate-45">
+            <HiArrowNarrowUp size={150} color="white"/>
+          </div>
+         </div>
+         <div className="text-center text-white text-4xl pt-16 ">
+          20m
+         </div>
+    </main>
+    )
+}
