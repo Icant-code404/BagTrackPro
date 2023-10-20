@@ -2,7 +2,6 @@
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '/public/Logo.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,9 +38,9 @@ export default function Home() {
       />
     </div>
 
-    <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+    <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left pb-10 space-x-3">
       <Link
-        href="/"
+        href="/PairingPage"
         className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-100 hover:bg-gray-300 hover:bg-opacity-50 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         target="_blank"
         rel="noopener noreferrer"
@@ -92,7 +91,7 @@ export default function Home() {
       </Link>
 
       <Link
-        href="/"
+        href="/MapPage"
         className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-300 hover:bg-opacity-50 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         target="_blank"
         rel="noopener noreferrer"

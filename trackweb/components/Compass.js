@@ -2,7 +2,7 @@
 import React from 'react';
 import {HiArrowNarrowUp} from 'react-icons/hi'
 
-const Compass = ({ heading }) => {
+const Compass = ({ heading}) => {
   return (
     <div className="compass flex items-center justify-center ">
       <div className="">
