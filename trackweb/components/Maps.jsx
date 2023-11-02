@@ -1,13 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
+// import './map.css'
 
-
-export default function Map() {
+export default function Maps() {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  var lat =35.6844;
-  var lng = 139.753;
+  var lat =19.044305;
+  var lng = 72.819801;
   const place = { lng, lat };
   const [zoom] = useState(14);
   maptilersdk.config.apiKey = 'eQbQ1AOl97qRDt0iDIzZ';
@@ -28,7 +28,7 @@ export default function Map() {
   }, [place.lng, place.lat, zoom]);
 
   return (
-    <div className="map-wrap">
+    <div className="map-wrap block">
       <div ref={mapContainer} className="map" />
     </div>
   );
